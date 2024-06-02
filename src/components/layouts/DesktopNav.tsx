@@ -1,72 +1,65 @@
+
 import Link from 'next/link';
-import { Icons } from '../Icons';
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger
-} from '../ui/NavigationMenu';
-import { ListItem } from './ListItem';
+import Image from 'next/image';
+import { NavigationMenu } from '../ui/NavigationMenu';
+import Themeswitch from '@/components/ui/Themeswitch';
+import '@/app/globals.css'; 
 
 const DesktopNav = () => {
   return (
-    <div className='hidden lg:flex gap-x-8 items-center'>
-      <Link href='/' className='flex space-x-2'>
-        <Icons.logo className='h-6 w-6' aria-hidden='true' />
-        <span className='hidden font-bold lg:inline-block'>Skaters</span>
-        <span className='sr-only'>Home</span>
-      </Link>
-      <NavigationMenu>
-        <NavigationMenuList>
-          <NavigationMenuItem>
-            <NavigationMenuTrigger>Lobby</NavigationMenuTrigger>
-            <NavigationMenuContent>
-              <ul className='grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]'>
-                <li className='row-span-3'>
-                  <NavigationMenuLink asChild>
-                    <Link className='flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md' href='/'>
-                      <Icons.logo className='h-6 w-6' />
-                      <div className='mb-2 mt-4 text-lg font-medium'>Skaters</div>
-                      <p className='text-sm leading-tight text-muted-foreground'>An open source ecommerce skateshop built with everything new in Next.js</p>
-                    </Link>
-                  </NavigationMenuLink>
-                </li>
-                <ListItem href='/products' title='Products'>
-                  All the products we have to offer
-                </ListItem>
-                <ListItem href='/#categories' title='Categories'>
-                  See all categories we have
-                </ListItem>
-                <ListItem href='/dashboard/stores' title='Create store'>
-                  Create store and start selling products
-                </ListItem>
-              </ul>
-            </NavigationMenuContent>
-          </NavigationMenuItem>
-          <NavigationMenuItem>
-            <NavigationMenuTrigger>Categories</NavigationMenuTrigger>
-            <NavigationMenuContent>
-              <ul className='grid w-[400px] gap-3 p-6 md:w-[500px] md:grid-cols-2'>
-                <ListItem href='/products?category=skateboards' title='Skateboards'>
-                  Explore the skateboards category
-                </ListItem>
-                <ListItem href='/products?category=clothing' title='Clothing'>
-                  Explore the clothing category
-                </ListItem>
-                <ListItem href='/products?category=shoes' title='Shoes'>
-                  Explore the shoes category
-                </ListItem>
-                <ListItem href='/products?category=accessories' title='Accessories'>
-                  Explore the accessories category
-                </ListItem>
-              </ul>
-            </NavigationMenuContent>
-          </NavigationMenuItem>
-        </NavigationMenuList>
-      </NavigationMenu>
-    </div>
+    <nav className='fixed w-full z-20 top-0 start-0'>
+      <div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'>
+        <Link href="/" className='flex items-center space-x-3 rtl:space-x-reverse'>
+          <Image src="/images/comparetelecom.png" alt="logo" width={150} height={75} />
+        </Link>
+
+        <div className='items-center justify-between hidden w-full md:flex md:w-auto md:order-1' id="navbar-sticky">
+          <NavigationMenu>
+            <ul className='flex flex-col p-4 md:p-0 mt-4 font-medium border md:flex-row md:space-x-8 md:mt-0 md:border-0'>
+              <li>
+                <Link href='/forfait' className='dark:text-white'>
+                  Forfait Mobile
+                </Link>
+              </li>
+              <li>
+                <Link href='/box'  className='dark:text-white'>
+                  Box Internet
+                </Link>
+              </li>
+              <li>
+                <Link href='/products?category=shoes' className='dark:text-white'>
+                  Energie
+                </Link>
+              </li>
+              <li>
+                <Link href='/products?category=accessories' className='dark:text-white'>
+                  Blogue
+                </Link>
+              </li>
+              <li>
+                <Link href='#' className='dark:text-white'>
+                  <Themeswitch />
+                </Link>
+
+              </li>
+            </ul>
+          </NavigationMenu>
+
+        </div>
+
+        <div className='flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse'>
+          <button type="button" className='btn_primary'>
+            0145243524
+          </button>
+          <button data-collapse-toggle="navbar-sticky" type="button" className='inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600' aria-controls="navbar-sticky" aria-expanded="false">
+            <span className='sr-only'>Open main menu</span>
+            <svg className='w-5 h-5' aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
   );
 };
 

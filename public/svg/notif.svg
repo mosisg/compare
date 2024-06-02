@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_3" data-name="Calque 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240.94 240.94">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #000;
+        stroke-linejoin: round;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-linecap: round;
+        stroke-width: 2px;
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+      }
+
+      .cls-3 {
+        stroke: #1d1d1b;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-4 {
+        fill: #6bb033;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M131.71,55.05c.71-1.52,1.11-3.21,1.11-5,0-6.52-5.29-11.8-11.81-11.8s-11.8,5.28-11.8,11.8c0,1.79.4,3.48,1.11,5"/>
+  <path class="cls-2" d="M180.09,183.8c8.96,0,17.17-2.43,17.17-14.97,0-11.85-11.19-14.43-16.62-14.98-2.59-.27-9.37-17.51-8.77-33.99,3.21-88.06-104.94-88.06-101.73,0,.6,16.48-6.18,33.73-8.77,33.99-5.43.56-16.63,3.14-16.62,14.98,0,12.55,8.21,14.97,17.17,14.97s109.2,0,118.16,0Z"/>
+  <path class="cls-3" d="M146,183.8c-5.1,7.46-14.39,12.45-24.99,12.45s-19.89-4.99-24.99-12.45"/>
+  <rect class="cls-4" x="21.92" y="69.59" width="27.5" height="8.13" rx="4.07" ry="4.07" transform="translate(17.98 153.57) rotate(-141.68)"/>
+  <rect class="cls-4" x="19.83" y="104.62" width="27.5" height="8.13" rx="4.07" ry="4.07" transform="translate(67.16 217.38) rotate(-180)"/>
+  <rect class="cls-4" x="23.52" y="136.17" width="27.5" height="8.13" rx="4.07" ry="4.07" transform="translate(170.39 197.95) rotate(128.32)"/>
+  <rect class="cls-4" x="193.25" y="70.54" width="27.5" height="8.13" rx="4.07" ry="4.07" transform="translate(-1.66 144.44) rotate(-38.32)"/>
+  <rect class="cls-4" x="195.34" y="105.57" width="27.5" height="8.13" rx="4.07" ry="4.07"/>
+  <rect class="cls-4" x="191.66" y="137.11" width="27.5" height="8.13" rx="4.07" ry="4.07" transform="translate(188.79 -107.51) rotate(51.68)"/>
+</svg>

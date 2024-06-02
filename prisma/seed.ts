@@ -26,6 +26,18 @@ async function main() {
       slug: 'accessories',
     },
   })
+  const orange = await prisma.category.create({
+    data: {
+      name: 'Orange',
+      slug: 'orange',
+    },
+  })
+  const sfr = await prisma.category.create({
+    data: {
+      name: 'Sfr',
+      slug: 'sfr',
+    },
+  })
 
   console.log({ skateboards, clothing, shoes, accessories })
 }

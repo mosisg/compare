@@ -18,16 +18,15 @@ interface NavbarProps {
 
 const Navbar: React.FC<NavbarProps> = ({ user }) => {
   return (
-    <header className='sticky top-0 z-50 w-full border-b bg-background py-3'>
-      <nav className='container px-2 sm:px-4 lg:px-6 flex items-center justify-between'>
+    <header>
+      
         {/* Left */}
         <MobileNav />
         <DesktopNav />
 
         {/* Right */}
-        <div className='flex items-center gap-x-2'>
-          <SearchButton />
-          <CartButton />
+        <div className='items-center gap-x-2 hidden'>
+        
           {user ? (
             <UserAccountNav user={user} />
           ) : (
@@ -42,7 +41,7 @@ const Navbar: React.FC<NavbarProps> = ({ user }) => {
             </Link>
           )}
         </div>
-      </nav>
+      
     </header>
   )
 }

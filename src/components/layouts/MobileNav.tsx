@@ -4,7 +4,7 @@ import { Menu } from 'lucide-react'
 import Link from 'next/link'
 import { useState } from 'react'
 
-import { Icons } from '@/components/Icons'
+
 import {
   Accordion,
   AccordionContent,
@@ -33,9 +33,9 @@ const MobileNav = () => {
               className='flex items-center'
               onClick={() => setIsOpen(false)}
             >
-              <Icons.logo className='mr-2 h-4 w-4' aria-hidden='true' />
-              <span className='font-bold'>Skaters</span>
-              <span className='sr-only'>Home</span>
+              
+              <span className='font-bold'>Comparetelecom</span>
+              <span className='sr-only'>Accueil</span>
             </Link>
             <div className='text-sm'>
               <Accordion
@@ -44,7 +44,7 @@ const MobileNav = () => {
                 className='w-full'
               >
                 <AccordionItem value='item-1'>
-                  <AccordionTrigger>My Dashboard</AccordionTrigger>
+                  <AccordionTrigger>Tableau de bord</AccordionTrigger>
                   <AccordionContent>
                     <div className='flex flex-col gap-y-2 text-muted-foreground'>
                       <Link
@@ -67,7 +67,7 @@ const MobileNav = () => {
                   <AccordionContent>
                     <div className='flex flex-col gap-y-2 text-muted-foreground'>
                       <Link onClick={() => setIsOpen(false)} href='/products'>
-                        Products
+                        Offres
                       </Link>
                       <Link
                         onClick={() => setIsOpen(false)}
@@ -79,7 +79,7 @@ const MobileNav = () => {
                         onClick={() => setIsOpen(false)}
                         href='/dashboard/stores'
                       >
-                        Create store
+                        Creer 
                       </Link>
                     </div>
                   </AccordionContent>

@@ -21,4 +21,20 @@ export const categories: Category[] = [
     name: 'Accessories',
     slug: 'accessories',
   },
+  {
+    name: 'Orange',
+    slug: 'orange',
+  },
+    {
+    name: 'Sfr',
+    slug: 'sfr',
+  },
+    {
+    name: 'Bouygues',
+    slug: 'bouygues',
+  },
+    {
+    name: 'Free',
+    slug: 'free',
+  },
 ]

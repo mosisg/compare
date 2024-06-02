@@ -14,18 +14,18 @@ const Categories = async () => {
     >
       <div className='flex items-end justify-between'>
         <div className='flex flex-col space-y-4'>
-          <h2 className='max-w-sm text-3xl md:text-5xl text-start text-emerald-600 font-bold leading-[1.1]'>
-            Featured Categories
-          </h2>
+          <h2 className='max-w-sm text-3xl md:text-5xl text-start text-[#79CE25] font-bold leading-[1.1]'>
+           
+            Les opérateurs télécoms  </h2>
           <h3 className='leading-normal text-muted-foreground sm:text-lg sm:leading-7'>
-            Find the best skateboarding gears from stores around the world
+            Trouver les meilleurs offres selon votre convenance
           </h3>
         </div>
         <a
           href='/products'
-          className='hidden md:flex gap-1 text-emerald-700 hover:translate-x-1 hover:text-emerald-600 transition-all'
+          className='hidden md:flex gap-1 text-[#79CE25] hover:translate-x-1 hover:text-[#79CE25]  transition-all'
         >
-          Shop the collection <ArrowRight />
+          Choississez <ArrowRight />
         </a>
       </div>
       <div className='grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>

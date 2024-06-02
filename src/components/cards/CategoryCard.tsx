@@ -1,3 +1,5 @@
+
+
 import { Category } from '@prisma/client'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -24,23 +26,21 @@ const CategoryCard: React.FC<CategoryCardProps> = async ({ category }) => {
 
   return (
     <Link href={`/products?category=${category.slug}`}>
-      <Card className='relative h-full w-full overflow-hidden rounded-lg bg-transparent transition-colors group hover:bg-emerald-600'>
-        <CardHeader>
+      <Card className='relative overflow-hidden rounded-lg bg-white transition-transform transform group hover:bg-[#f1ffe2] hover:scale-105 '>
+        <CardHeader className='flex justify-center items-center'>
           <Image
-            src={`/svg/${category.slug}.svg`}
+            src={`/svg/${category.slug}.png`}
             alt='test'
-            width={32}
-            height={32}
+            width={100}
+            height={75}
           />
         </CardHeader>
-        <CardContent className='space-y-1.5'>
-          <CardTitle className='capitalize text-emerald-600 group-hover:text-white'>
-            {category.name}
-          </CardTitle>
-          <CardDescription className='group-hover:text-white'>
-            {products} Products
-          </CardDescription>
-        </CardContent>
+        <CardContent />
+
+        <CardDescription />
+
+        <CardTitle />
+
       </Card>
     </Link>
   )

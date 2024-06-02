@@ -8,10 +8,10 @@ import ClientProvider from '@/providers/ClientProvider'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Skaters',
-  description: 'An open source e-commerce project built by inifarhan',
-  category: 'ecommerce',
-  authors: { name: 'inifarhan' },
+  title: 'Comparetelecom',
+  description: 'Comparateur des offres téléoms en France',
+  category: 'Marketing Affiliation',
+  authors: { name: 'Moussa Gaye' },
   keywords: [
     'Next.js',
     'React',

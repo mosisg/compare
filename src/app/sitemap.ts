@@ -6,14 +6,13 @@ import prisma from '@/lib/db'
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const allProducts = await prisma.product.findMany({
     select: {
-      id: true,
-      storeId: true,
+      id: true,  
       slug: true,
     },
   })
 
   const productsRoutes = allProducts.map((product) => ({
-    url: `${process.env.NEXT_PUBLIC_APP_URL}/${product.storeId}/${product.slug}?productId=${product.id}`,
+    url: `${process.env.NEXT_PUBLIC_APP_URL}/${product.id}/${product.slug}?productId=${product.id}`,
     lastModified: new Date().toISOString(),
   }))
 
@@ -22,7 +21,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     lastModified: new Date().toISOString(),
   }))
 
-  const routes = ['', 'products', 'dashboard/stores'].map((route) => ({
+  const routes = ['', 'products'].map((route) => ({
     url: `${process.env.NEXT_PUBLIC_APP_URL}/${route}`,
     lastModified: new Date().toISOString(),
   }))

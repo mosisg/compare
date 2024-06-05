@@ -1,10 +1,11 @@
+
 import ProductCard from '@/components/cards/ProductCard'
 import prisma from '@/lib/db'
 
 const PopularProducts = async () => {
   const products = await prisma.product.findMany({
     orderBy: {
-      createdAt: 'desc',
+      name: 'asc', // Tri par le nom du produit en ordre croissant
     },
     include: {
       Category: true,

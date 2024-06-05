@@ -1,3 +1,4 @@
+
 import Filter from '@/components/Filter'
 import { Heading } from '@/components/Heading'
 import ProductsList from '@/components/ProductsList'
@@ -17,9 +18,7 @@ const Products = async ({
       where: {
         categoryId: searchParams.category,
       },
-      orderBy: {
-        createdAt: 'desc',
-      },
+    
       include: {
         Category: true,
       },
@@ -36,9 +35,7 @@ const Products = async ({
     totalProducts = totalProductsWithCategory
   } else {
     const productsWithoutCategory = await prisma.product.findMany({
-      orderBy: {
-        createdAt: 'desc',
-      },
+  
       include: {
         Category: true,
       },
@@ -52,12 +49,12 @@ const Products = async ({
   }
 
   return (
-    <div className='flex flex-col py-6 sm:py-20 px-4 sm:px-6 lg:px-8' style={{ color: '#79CE25' }}>
+    <div className='flex flex-col py-6 sm:py-10 px-4 sm:px-6 lg:px-8'>
       <Heading
-      
-        description=''  title={''}      />
-      <div className='mt-8 sm:mt-10 mb-4 sm:mb-6'  /> 
-      <Filter categories={categories} className='mt-8 sm:mt-10 mb-4 sm:mb-6'  />
+        title={`Products (${totalProducts})`}
+        description='Explore all products from around the world'
+      />
+      <Filter categories={categories} className='mt-8 sm:mt-10 mb-4 sm:mb-6' />
       <ProductsList initialProducts={products} totalData={totalProducts} />
     </div>
   )

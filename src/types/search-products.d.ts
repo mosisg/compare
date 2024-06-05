@@ -4,7 +4,6 @@ export interface SearchProducts {
     id: string
     name: string
     slug: string
-    storeId: string
     categoryId: string
   }[]
 }

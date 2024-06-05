@@ -1,4 +1,5 @@
 
+import Hero1 from '@/components/Hero1'
 import Toplan from '@/components/Toplan'
 
 
@@ -9,6 +10,9 @@ const Box = () => {
     <div className='text-black text-4xl pb-16  '> 
      {'  '}
     </div>
+
+
+    <Hero1/>
      
      <Toplan />
 

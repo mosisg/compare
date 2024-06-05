@@ -3,6 +3,7 @@ import '@/app/globals.css'
 
 
 
+
 const Footer = () => {
   return (
 
@@ -25,7 +26,7 @@ const Footer = () => {
           Comparetelecom
         </Link>{" "}
         2024. Tous droits réservés -{" "}
-        <Link href="/planhub/terms" title="Page : Conditions Générales de Service" className="text-white">
+        <Link href="/policy" title="Page : Conditions Générales de Service" className="text-white">
           Conditions Générales -{" "}
         </Link>{" "}
         <Link href="/planhub/privacy" title="Page : Votre Vie Privée Compte. Notre Politique de Confidentialité" className="text-white">

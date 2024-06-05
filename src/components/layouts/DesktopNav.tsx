@@ -26,13 +26,9 @@ const DesktopNav = () => {
                   Box Internet
                 </Link>
               </li>
+          
               <li>
-                <Link href='/products?category=shoes' className='dark:text-white'>
-                  Energie
-                </Link>
-              </li>
-              <li>
-                <Link href='/products?category=accessories' className='dark:text-white'>
+                <Link href='/forfait?category=orange' className='dark:text-white'>
                   Blogue
                 </Link>
               </li>

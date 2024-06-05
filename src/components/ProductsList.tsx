@@ -40,7 +40,7 @@ const ProductsList: React.FC<ProductsListProps> = ({
         return data
       },
       initialPageParam: 1,
-      getNextPageParam: (lastPage, allPages) => {
+      getNextPageParam: (_lastPage, allPages) => {
         return allPages.length + 1
       },
       initialData: { pages: [initialProducts], pageParams: [1] },

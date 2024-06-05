@@ -10,11 +10,11 @@ const Categories = async () => {
     <section
       id='categories'
       aria-labelledby='categories-heading'
-      className='space-y-8 px-4 sm:px-6 lg:px-8 py-8 md:pt-10 lg:pt-24 sm:pb-28'
+      className='space-y-8 px-4 sm:px-6 lg:px-8 py-8 md:pt-10 lg:pt-24 sm:pb-28 '
     >
       <div className='flex items-end justify-between'>
         <div className='flex flex-col space-y-4'>
-          <h2 className='max-w-sm text-3xl md:text-5xl text-start text-[#79CE25] font-bold leading-[1.1]'>
+          <h2 className='max-w-sm text-2xl md:text-5xl text-start text-[#79CE25] font-bold leading-[1.1]'>
            
             Les opérateurs télécoms  </h2>
           <h3 className='leading-normal text-muted-foreground sm:text-lg sm:leading-7'>
@@ -22,7 +22,7 @@ const Categories = async () => {
           </h3>
         </div>
         <a
-          href='/products'
+          href='/forfait'
           className='hidden md:flex gap-1 text-[#79CE25] hover:translate-x-1 hover:text-[#79CE25]  transition-all'
         >
           Choississez <ArrowRight />

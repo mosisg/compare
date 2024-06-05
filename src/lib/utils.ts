@@ -16,6 +16,6 @@ export function formatDate(date: Date | string | number) {
 export function formatPrice(price: number) {
   return new Intl.NumberFormat('id-ID', {
     style: 'currency',
-    currency: 'IDR',
+    currency: 'euro',
   }).format(price)
 }

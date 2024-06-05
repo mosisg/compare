@@ -25,7 +25,7 @@ const Products = async () => {
           </h3>
         </div>
         <a
-          href='/products'
+          href='/forfait'
           className='hidden md:flex gap-1 hover:translate-x-1 hover:text-emerald-600 transition-all' style={{ color: '#79CE25' }}
         >
           Choisissez <ArrowRight />
@@ -35,7 +35,7 @@ const Products = async () => {
         <PopularProducts />
       </Suspense>
       <Link
-        href='/products'
+        href='/forfait'
         className='custom-button-color mx-auto flex w-fit hover:before:-translate-x-48'
         
       >

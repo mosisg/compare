@@ -1,26 +1,11 @@
-import { Category } from '@prisma/client'
+import { Category } from '@prisma/client/edge'
 
 export const INFINITE_SCROLL_LIMIT = 8
 
 export const ORDER_INFINITE_SCROLL_LIMIT = 3
 
 export const categories: Category[] = [
-  {
-    name: 'Skateboards',
-    slug: 'skateboards',
-  },
-  {
-    name: 'Clothing',
-    slug: 'clothing',
-  },
-  {
-    name: 'Shoes',
-    slug: 'shoes',
-  },
-  {
-    name: 'Accessories',
-    slug: 'accessories',
-  },
+
   {
     name: 'Orange',
     slug: 'orange',
@@ -36,5 +21,21 @@ export const categories: Category[] = [
     {
     name: 'Free',
     slug: 'free',
+  },
+      {
+    name: 'Lebara',
+    slug: 'lebara',
+  },
+      {
+    name: 'La poste Mobile',
+    slug: 'poste',
+  },
+      {
+    name: 'Sosh',
+    slug: 'sosh',
+  },
+      {
+    name: 'You',
+    slug: 'you',
   },
 ]

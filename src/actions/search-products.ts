@@ -1,3 +1,4 @@
+
 'use server'
 
 import { categories } from '@/config'
@@ -13,13 +14,9 @@ const searchProducts = async (query: string): Promise<SearchProducts[]> => {
     },
     select: {
       id: true,
-      storeId: true,
       name: true,
       slug: true,
       categoryId: true,
-    },
-    orderBy: {
-      createdAt: 'desc',
     },
     take: 10,
   })

@@ -3,6 +3,7 @@ import Categories from '@/components/Categories'
 import Cookies from '@/components/Cookies'
 import Hero from '@/components/Hero'
 import Products from '@/components/Products'
+import Review from '@/components/Review'
 
 export default function Lobby() {
   return (
@@ -13,6 +14,7 @@ export default function Lobby() {
         <Products />
         <Alerte />
         <Cookies />
+        <Review />
       </div>
     </main>
   )

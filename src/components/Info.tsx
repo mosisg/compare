@@ -1,28 +1,21 @@
 'use client'
 
-import { Product, Store } from '@prisma/client'
+import { Product } from '@prisma/client'
 import { ShoppingCart } from 'lucide-react'
-import { MouseEventHandler } from 'react'
 
 import { Button } from '@/components/ui/Button'
-import useCart from '@/hooks/useCart'
 import { formatPrice } from '@/lib/utils'
 import { Separator } from '@/components/ui/Separator'
 
 interface InfoProps {
   product: Product & {
-    Store: Store
+   
   }
 }
 
 const Info: React.FC<InfoProps> = ({ product }) => {
-  const cart = useCart()
+ 
 
-  const onAddToCart: MouseEventHandler<HTMLButtonElement> = (e) => {
-    e.preventDefault()
-
-    cart.addItem(product)
-  }
 
   return (
     <div>
@@ -34,7 +27,7 @@ const Info: React.FC<InfoProps> = ({ product }) => {
         </h2>
       </div>
         <p className='my-2 text-muted-foreground'>
-          {product.Store.name}
+         
         </p>
       <Separator className='my-4' />
       <div className='flex flex-col gap-y-6'>
@@ -46,7 +39,7 @@ const Info: React.FC<InfoProps> = ({ product }) => {
         )}
       </div>
       <div className='mt-10 flex items-center gap-x-3'>
-        <Button onClick={onAddToCart} className='flex items-center gap-x-2'>
+        <Button className='flex items-center gap-x-2'>
           Add To Cart
           <ShoppingCart />
         </Button>

@@ -7,35 +7,7 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url = env("POSTGRES_PRISMA_URL") // uses connection pooling
-  directUrl = env("POSTGRES_URL_NON_POOLING") // uses a direct connection
-}
-
-model Account {
-  id                String  @id @default(cuid())
-  userId            String
-  type              String
-  provider          String
-  providerAccountId String
-  refresh_token     String? @db.Text
-  access_token      String? @db.Text
-  expires_at        Int?
-  token_type        String?
-  scope             String?
-  id_token          String? @db.Text
-  session_state     String?
-
-  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
-
-  @@unique([provider, providerAccountId])
-}
-
-model Session {
-  id           String   @id @default(cuid())
-  sessionToken String   @unique
-  userId       String
-  expires      DateTime
-  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  url = env("DATABASE_URL")
 }
 
 model VerificationToken {
@@ -46,32 +18,6 @@ model VerificationToken {
   @@unique([identifier, token])
 }
 
-model User {
-  id            String    @id @default(cuid())
-  name          String?
-  email         String?   @unique
-  emailVerified DateTime?
-  image         String?
-  accounts      Account[]
-  sessions      Session[]
-  stores        Store[]
-  orders        Order[]
-}
-
-model Store {
-  id          String      @id
-  name        String
-  description String?     @db.Text
-  userId      String
-  User        User        @relation(fields: [userId], references: [id])
-  createdAt   DateTime    @default(now())
-  updatedAt   DateTime    @updatedAt
-  Product     Product[]
-  OrderItem   OrderItem[]
-
-  @@index([userId])
-}
-
 model Category {
   slug     String    @id
   name     String
@@ -79,52 +25,20 @@ model Category {
 }
 
 model Product {
-  id          String      @id @default(uuid())
+  id          String      @id
   name        String
   slug        String
   description String?     @db.Text
   price       Decimal
   images      Json
-  storeId     String
-  Store       Store       @relation(fields: [storeId], references: [id])
   categoryId  String
   Category    Category    @relation(fields: [categoryId], references: [slug])
-  createdAt   DateTime    @default(now())
-  updatedAt   DateTime    @updatedAt
-  orderItems  OrderItem[]
 
-  @@index([storeId, categoryId, name, slug])
+  @@index([categoryId, name, slug])
 }
 
-enum TRANSACTION_STATUS {
-  PENDING
-  PAID
-  CANCELED
-}
 
-model Order {
-  id               String             @id
-  totalPrice       Decimal
-  token            String
-  status           TRANSACTION_STATUS
-  userId           String
-  User             User               @relation(fields: [userId], references: [id])
-  createdAt        DateTime           @default(now())
-  updatedAt        DateTime           @updatedAt
-  orderItems       OrderItem[]
 
-  @@index([userId])
-}
 
-model OrderItem {
-  id        String  @id @default(uuid())
-  orderId   String
-  order     Order   @relation(fields: [orderId], references: [id])
-  productId String
-  product   Product @relation(fields: [productId], references: [id])
-  storeId   String
-  store     Store   @relation(fields: [storeId], references: [id])
 
-  @@index([orderId])
-  @@index([productId])
-}
+

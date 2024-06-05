@@ -2,28 +2,10 @@ const { PrismaClient } = require('@prisma/client')
 const prisma = new PrismaClient()
 
 async function main() {
-  const skateboards = await prisma.category.create({
+  const bouygues = await prisma.category.create({
     data: {
-      name: 'Skateboards',
-      slug: 'skateboards',
-    },
-  })
-  const clothing = await prisma.category.create({
-    data: {
-      name: 'Clothing',
-      slug: 'clothing',
-    },
-  })
-  const shoes = await prisma.category.create({
-    data: {
-      name: 'Shoes',
-      slug: 'shoes',
-    },
-  })
-  const accessories = await prisma.category.create({
-    data: {
-      name: 'Accessories',
-      slug: 'accessories',
+      name: 'Bouygues',
+      slug: 'bouygues',
     },
   })
   const orange = await prisma.category.create({
@@ -32,6 +14,13 @@ async function main() {
       slug: 'orange',
     },
   })
+  const free = await prisma.category.create({
+    data: {
+      name: 'Free',
+      slug: 'free',
+    },
+  })
+
   const sfr = await prisma.category.create({
     data: {
       name: 'Sfr',
@@ -39,7 +28,7 @@ async function main() {
     },
   })
 
-  console.log({ skateboards, clothing, shoes, accessories })
+  console.log({ bouygues, orange, free, sfr })
 }
 main()
   .then(async () => {

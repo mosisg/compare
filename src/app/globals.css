@@ -345,85 +345,85 @@ p {
 /*! CSS Used from: https://www.planhub.ca/css/compiled/planhub2021-162.7.css ; media=all */
 
 
-  .glyphicon-bell:before {
-    content: "\e123";
-  }
+.glyphicon-bell:before {
+  content: "\e123";
+}
 
-  .layout-alert {
-    background: #f1ffe2;
-    padding-top: 15px;
-    margin-top: 30px;
-    box-shadow: 4px 4px 12px rgba(0, 0, 0, .25);
-    border-radius: 6px;
-    padding-bottom: 20px;
-  }
+.layout-alert {
+  background: #f1ffe2;
+  padding-top: 15px;
+  margin-top: 30px;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, .25);
+  border-radius: 6px;
+  padding-bottom: 20px;
+}
 
-  .wide-padded {
-    width: 75%;
-    padding-bottom: 20px;
-  }
+.wide-padded {
+  width: 75%;
+  padding-bottom: 20px;
+}
 
-  .container-btn-a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.container-btn-a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .container-img {
-    display: flex;
-    gap: 18px;
-    justify-content: center;
-    align-items: center;
-  }
+.container-img {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  align-items: center;
+}
 
+.ph-internet-alert .responsive-img {
+  width: 71px;
+  height: 165px;
+}
+
+@media only screen and (max-width:600px) {
   .ph-internet-alert .responsive-img {
-    width: 71px;
-    height: 165px;
+    width: 50px;
+    height: 115px;
   }
+}
 
-  @media only screen and (max-width:600px) {
-    .ph-internet-alert .responsive-img {
-      width: 50px;
-      height: 115px;
-    }
-  }
-
-  @media only screen and (max-width:480px) {
-    .ph-internet-alert .responsive-img {
-      width: 38px;
-      height: 85px;
-    }
-  }
-
-  .ph-internet-alert .arrow {
+@media only screen and (max-width:480px) {
+  .ph-internet-alert .responsive-img {
     width: 38px;
+    height: 85px;
   }
+}
 
-  @media (prefers-color-scheme:dark) {
-    .ph-internet-alert .ph_container__child .paragraph2 {
-      color: #000;
-    }
-  }
+.ph-internet-alert .arrow {
+  width: 38px;
+}
 
-  .layout-alert {
-    background: #f1ffe2;
-    padding-top: 15px;
-    margin-top: 30px;
-    box-shadow: 4px 4px 12px rgba(0, 0, 0, .25);
-    border-radius: 6px;
-    padding-bottom: 20px;
+@media (prefers-color-scheme:dark) {
+  .ph-internet-alert .ph_container__child .paragraph2 {
+    color: #000;
   }
+}
 
-  .wide-padded {
-    width: 75%;
-    padding-bottom: 20px;
-  }
+.layout-alert {
+  background: #f1ffe2;
+  padding-top: 15px;
+  margin-top: 30px;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, .25);
+  border-radius: 6px;
+  padding-bottom: 20px;
+}
 
-  .container-btn-a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.wide-padded {
+  width: 75%;
+  padding-bottom: 20px;
+}
+
+.container-btn-a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 
@@ -514,80 +514,80 @@ p {
 
 
 
-  .glyphicon-bell:before {
-    content: "\e123";
-  }
+.glyphicon-bell:before {
+  content: "\e123";
+}
 
-  .layout-alert {
-    background: #f1ffe2;
-    padding-top: 15px;
-    margin-top: 30px;
-    box-shadow: 4px 4px 12px rgba(0, 0, 0, .25);
-    border-radius: 6px;
-    padding-bottom: 20px;
-  }
+.layout-alert {
+  background: #f1ffe2;
+  padding-top: 15px;
+  margin-top: 30px;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, .25);
+  border-radius: 6px;
+  padding-bottom: 20px;
+}
 
-  .wide-padded {
-    width: 75%;
-    padding-bottom: 20px;
-  }
+.wide-padded {
+  width: 75%;
+  padding-bottom: 20px;
+}
 
-  .container-btn-a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.container-btn-a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 
+.ph-internet-alert .responsive-img {
+  width: 71px;
+  height: 165px;
+}
+
+@media only screen and (max-width:600px) {
   .ph-internet-alert .responsive-img {
-    width: 71px;
-    height: 165px;
+    width: 50px;
+    height: 115px;
   }
+}
 
-  @media only screen and (max-width:600px) {
-    .ph-internet-alert .responsive-img {
-      width: 50px;
-      height: 115px;
-    }
-  }
-
-  @media only screen and (max-width:480px) {
-    .ph-internet-alert .responsive-img {
-      width: 38px;
-      height: 85px;
-    }
-  }
-
-  .ph-internet-alert .arrow {
+@media only screen and (max-width:480px) {
+  .ph-internet-alert .responsive-img {
     width: 38px;
+    height: 85px;
   }
+}
 
-  @media (prefers-color-scheme:dark) {
-    .ph-internet-alert .ph_container__child .paragraph2 {
-      color: #000;
-    }
-  }
+.ph-internet-alert .arrow {
+  width: 38px;
+}
 
-  .layout-alert {
-    background: #f1ffe2;
-    padding-top: 15px;
-    margin-top: 30px;
-    box-shadow: 4px 4px 12px rgba(0, 0, 0, .25);
-    border-radius: 6px;
-    padding-bottom: 20px;
+@media (prefers-color-scheme:dark) {
+  .ph-internet-alert .ph_container__child .paragraph2 {
+    color: #000;
   }
+}
 
-  .wide-padded {
-    width: 75%;
-    padding-bottom: 20px;
-  }
+.layout-alert {
+  background: #f1ffe2;
+  padding-top: 15px;
+  margin-top: 30px;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, .25);
+  border-radius: 6px;
+  padding-bottom: 20px;
+}
 
-  .container-btn-a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.wide-padded {
+  width: 75%;
+  padding-bottom: 20px;
+}
+
+.container-btn-a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 
@@ -1471,7 +1471,7 @@ p {
     align-items: center;
   }
 
- 
+
 }
 
 /*! CSS Used fontfaces */
@@ -1483,4 +1483,223 @@ p {
   advance-override: 0;
   ascent-override: 95%;
   descent-override: 40%;
+}
+
+
+
+
+
+/*! CSS Used from: Embedded */
+h1,
+.heading1 {
+  font-size: 44px;
+  line-height: 56px;
+  word-spacing: 7px;
+  margin: 0 0 16px;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 49px;
+  word-spacing: 5px;
+  margin: 0 0 16px;
+}
+
+h3 {
+  font-size: 22px;
+  line-height: 30px;
+  word-spacing: 3px;
+  margin: 0 0 16px;
+}
+
+.normal {
+  font-weight: 400;
+}
+
+.paragraph1 {
+  font-size: 18px;
+  line-height: 24px;
+  word-spacing: 2px;
+}
+
+.paragraph2 {
+  font-size: 16px;
+  line-height: 22px;
+  word-spacing: 2px;
+}
+
+@media (max-width:500px) {
+  .heading1 {
+    font-size: 22px;
+    line-height: 30px;
+    word-spacing: 3px;
+    font-weight: bold;
+  }
+
+  .paragraph1 {
+    font-size: 16px;
+    line-height: 22px;
+    word-spacing: 2px;
+  }
+
+  h1 {
+    font-weight: normal !important;
+  }
+
+  .heading1 {
+    font-weight: bold !important;
+  }
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  color: #012737;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+p {
+  margin: 16px 0 0;
+}
+
+input {
+  font-size: 14px;
+  padding: 0;
+}
+
+.ph_link {
+  color: #79CE25;
+  font-style: normal;
+  font-weight: bold;
+  word-break: break-word;
+  display: inline-flex;
+  align-items: center;
+}
+
+.ph_link:hover {
+  color: #70BF22;
+}
+
+.ph_link:focus,
+.ph_link:active {
+  color: #5C9E1A;
+}
+
+.subtitle {
+  color: #6B7980;
+}
+
+.hide {
+  display: none;
+}
+
+.ph_container {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  background: transparent;
+}
+
+.ph_container__child {
+  padding: 0 120px;
+}
+
+@media (max-width:1200px) {
+  .ph_container__child {
+    padding: 0 64px;
+  }
+}
+
+@media (max-width:768px) {
+  .ph_container__child {
+    padding: 0 16px;
+  }
+}
+
+.ph_spacer {
+  padding: 40px 0;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+
+.ph_accordion {
+  border-bottom: .5px solid #D6E2E8;
+}
+
+.ph_accordion .content {
+  overflow-y: hidden;
+  height: 0;
+  transition: all .35s;
+}
+
+.ph_accordion .content a:hover,
+.ph_accordion .content a:focus,
+.ph_accordion .content a:active {
+  text-decoration: none;
+}
+
+.ph_accordion>input[type="checkbox"]:checked~.content {
+  height: auto;
+  overflow: visible;
+  padding-bottom: 35px;
+}
+
+.ph_accordion .handle label {
+  display: grid;
+  grid-template-columns: auto 56px;
+  cursor: pointer;
+  padding: 32px 0 16px;
+}
+
+.ph_accordion .handle label:after {
+  font-family: 'icons-planhub' !important;
+  content: "\e914";
+  text-align: right;
+  font-size: .8em;
+  color: #79CE25;
+}
+
+.ph_accordion>input[type="checkbox"]:checked~.handle label:after {
+  content: "\e912";
+}
+
+.ph_accordion:last-child {
+  border-bottom: 0;
+}
+
+@media (prefers-color-scheme:dark) {
+  [data-domain="default"] body .subtitle {
+    color: #FFFFFF !important;
+  }
+
+  [data-domain="default"] body a:hover,
+  [data-domain="default"] body .ph_accordion a {
+    color: #79CE25 !important;
+  }
+}
+
+/*! CSS Used from: https://www.planhub.ca/css/compiled/planhub2021-162.13.css ; media=all */
+@media all {
+  #privacy h3 {
+    padding-top: 24px;
+  }
+}
+
+/*! CSS Used fontfaces */
+@font-face {
+  font-family: 'icons-planhub';
+  src: url('https://www.planhub.ca/css/fonts/icons-planhub/icons-planhub.eot?7oqqlq');
+  src: url('https://www.planhub.ca/css/fonts/icons-planhub/icons-planhub.eot?7oqqlq#iefix') format('embedded-opentype'), url('https://www.planhub.ca/css/fonts/icons-planhub/icons-planhub.ttf?7oqqlq') format('truetype'), url('https://www.planhub.ca/css/fonts/icons-planhub/icons-planhub.woff?7oqqlq') format('woff'), url('https://www.planhub.ca/css/fonts/icons-planhub/icons-planhub.svg?7oqqlq#icons-planhub') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
 }
